@@ -93,6 +93,11 @@ public class Hello {
 ```
 <!--FILTER_END-->
 
+Exemplo de tela:
+
+![](fig04.png)
+
+
 Salve o arquivo **(CTRL+O)** e então saia do programa **(CTRL+X)**.
 
 A seguir, compile o código usando o seguinte comando:
