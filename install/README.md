@@ -68,7 +68,7 @@ echo $JAVA_HOME
 
 Se tiver sido instalado corretamente, você deve ver a seguinte saída:
 
-![](fig03.png)
+![](fig03_1.png)
 
 Na saída acima podemos ver que foi instalada a versão mais recente do OpenJDK 17. Lembre-se, você deve verificar e refazer o processo para atualizações futuras.
 
