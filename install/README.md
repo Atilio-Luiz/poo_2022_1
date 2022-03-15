@@ -46,7 +46,7 @@ Exemplo de saída:
 
 ![](fig02.png)
 
-## 3. Configurando a variável de ambiente
+### 3. Configurando a variável de ambiente
 
 Agora você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
 
@@ -71,7 +71,7 @@ Se tiver sido instalado corretamente, você deve ver a seguinte saída:
 Na saída acima podemos ver que foi instalada a versão mais recente do OpenJDK 17. Lembre-se, você deve verificar e refazer o processo para atualizações futuras.
 
 
-## Testando o Java -- Criando uma aplicação
+### 4. Testando o Java -- Criando uma aplicação
 
 É sempre útil testar instalações desse tipo para confirmar que tudo está funcionando corretamente após a instalação. A maneira mais fácil é criar um pequeno teste usando o famoso exemplo Hello World.
 
