@@ -8,7 +8,7 @@ O JDK é uma coleção de várias ferramentas de programação, como JRE (Java R
 
 Atualize seu sistema operacional Ubuntu para garantir que todos os pacotes existentes estejam atualizados:
 
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -19,7 +19,7 @@ O tutorial usará o comando `sudo` e supondo que você tenha o status sudo.
 
 Vamos instalar o OpenJDK usando o repositório padrão do Ubuntu 20.04. Primeiro, pesquise para encontrar o que está disponível. No seu terminal, use o seguinte comando:
 
-```
+```bash
 apt-cache search openjdk
 ```
 
@@ -32,13 +32,13 @@ Como a saída acima indica, OpenJDK 17 JDE e JRE estão disponíveis para instal
 
 Para iniciar a instalação dos dois, use o seguinte comando de terminal.
 
-```
+```bash
 sudo apt-get install openjdk-17-jdk
 ```
 
 Confirme a instalação executando o seguinte comando:
 
-```
+```bash
 java --version
 ```
 
@@ -50,7 +50,7 @@ Exemplo de saída:
 
 Agora você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
 
-```
+```bash
 export JAVA_HOME=/opt/jdk-17.0.2
 export PATH=$PATH:$JAVA_HOME/bin
 ```
@@ -59,7 +59,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 Para confirmar a instalação, execute os seguintes comandos:
 
-```
+```bash
 java --version
 echo $JAVA_HOME
 ```
@@ -71,7 +71,50 @@ Se tiver sido instalado corretamente, você deve ver a seguinte saída:
 Na saída acima podemos ver que foi instalada a versão mais recente do OpenJDK 17. Lembre-se, você deve verificar e refazer o processo para atualizações futuras.
 
 
-## 4. Removendo o OpenJDK 17 do seu sistema
+## Testando o Java -- Criando uma aplicação
+
+É sempre útil testar instalações desse tipo para confirmar que tudo está funcionando corretamente após a instalação. A maneira mais fácil é criar um pequeno teste usando o famoso exemplo Hello World.
+
+Primeiro, crie o arquivo de programa Java da seguinte maneira:
+
+```bash
+sudo nano Hello.java
+```
+
+A seguir, adicione o seguinte código Java ao arquivo:
+
+<!--FILTER Solver.java java-->
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
+<!--FILTER_END-->
+
+Salve o arquivo **(CTRL+O)** e então saia do programa **(CTRL+X)**.
+
+A seguir, compile o código usando o seguinte comando:
+
+```bash
+javac Hello.java
+```
+
+Finalmente, execute o código Java com o seguinte comando:
+
+```bash
+java Hello
+```
+
+Exemplo de saída:
+
+![](fig04.png)
+
+Parabéns! Tudo está funcionando corretamente.
+
+
+## Removendo o OpenJDK 17 do seu sistema
 
 As atualizações do JDK são tratadas com os comandos **update** e **upgrade** do **apt**. No entanto, você pode removê-lo separadamente ou completamente se não precisar mais do JDK.
 
