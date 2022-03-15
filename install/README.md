@@ -46,6 +46,33 @@ Exemplo de saída:
 
 ![](fig02.png)
 
+## 3. Configurando a variável de ambiente
+
+Agora você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
+
+```
+export JAVA_HOME=/opt/jdk-17.0.2
+export PATH=$PATH:$JAVA_HOME/bin
+```
+
+**Atenção:** Lembre-se, altere **jdk-17.0.2** no comando acima com o nome do diretório atual se desejar ou se tiver uma versão diferente dessa.
+
+Para confirmar a instalação, execute os seguintes comandos:
+
+```
+java --version
+echo $JAVA_HOME
+```
+
+Se tiver sido instalado corretamente, você deve ver a seguinte saída:
+
+![](fig03.png)
+
+Na saída acima podemos ver que foi instalada a versão mais recente do OpenJDK 17. Lembre-se, você deve verificar e refazer o processo para atualizações futuras.
+
+
+## 4. Removendo o OpenJDK 17 do seu sistema
+
 As atualizações do JDK são tratadas com os comandos **update** e **upgrade** do **apt**. No entanto, você pode removê-lo separadamente ou completamente se não precisar mais do JDK.
 
 Exemplo de comando para remoção do JDK: 
