@@ -48,16 +48,41 @@ Exemplo de saída:
 
 ### 3. Configurando a variável de ambiente
 
-As variáveis de ambiente `JAVA_HOME` e `PATH` são usadas por algumas aplicações a fim de determinar o local em que a instalação do Java foi feita.
+A variável de ambiente `JAVA_HOME` é usada por algumas aplicações a fim de determinar o local em que a instalação do Java foi feita.
 
-Agora, você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
+Para definir a variável ​​de ambiente `JAVA_HOME`, primeiro você precisa encontrar o caminho da instalação usando o comando `update-alternatives`, assim:
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
-export PATH=$PATH:$JAVA_HOME/bin
+sudo update-alternatives --config java
 ```
 
-**Atenção:** Lembre-se, altere **jdk-17.0.2** no comando acima com o nome do diretório atual se desejar ou se tiver uma versão diferente dessa.
+Exemplo de execução desse comando na minha máquina:
+
+![](fig07.png)
+
+Como visto acima, o caminho de instalação do JAVA 17 na minha máquina ficou assim:
+
+```bash
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+```
+
+Depois de encontrar o caminho da sua instalação Java preferida, abra o arquivo `/etc/environment`:
+
+```bash
+sudo nano /etc/environment
+```
+
+Assumindo que você quer configurar a variável `JAVA_HOME` para apontar para o OpenJDK 17, adicione a seguinte linha ao final do arquivo:
+
+```bash
+JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+```
+
+Para que as mudanças surtam efeito você pode executar o seguinte comando:
+
+```bash
+source /etc/environment
+```
 
 Para confirmar a instalação, execute os seguintes comandos:
 
