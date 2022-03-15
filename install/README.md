@@ -53,7 +53,7 @@ As variáveis de ambiente `JAVA_HOME` e `PATH` são usadas por algumas aplicaç�
 Agora, você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
 
 ```bash
-export JAVA_HOME=/opt/jdk-17.0.2
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64/
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
