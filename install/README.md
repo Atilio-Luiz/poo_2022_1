@@ -28,4 +28,20 @@ Exemplo de saída:
 ![](fig01.png)
 
 
+Como a saída acima indica, OpenJDK 17 JDE e JRE estão disponíveis para instalação.
 
+Para iniciar a instalação dos dois, use o seguinte comando de terminal.
+
+```
+sudo apt-get install openjdk-17-jdk
+```
+
+Confirme a instalação executando o seguinte comando:
+
+```
+java --version
+```
+
+Exemplo de saída:
+
+![](fig02.png)
