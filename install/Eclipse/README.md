@@ -28,7 +28,7 @@ A seguinte janela aparecerá:
 
 ### 2. Instale o Eclipse
 
-Quando o assistente de instalação abrir, escolha a opção **Eclipse IDE for Java Developers”.
+Quando o assistente de instalação abrir, escolha a opção **Eclipse IDE for Java Developers**.
 
 ![](fig03.png)
 
@@ -41,14 +41,14 @@ A seguir, clique no botão **INSTALL** e aceite a licença para poder iniciar a 
 ![](fig06.png)
 
 
-Pronto! O software encontra-se instalado por padrão na pasta *home* do usuário. Uma vez instalado, você pode iniciá-lo no iniciador de aplicativos do sistema ou no atalho da área de trabalho. A tela inicial do Eclipse pode ser vista abaixo:
+O software Eclipse é instalado por padrão no diretório *home* do usuário (Pasta Pessoal). Uma vez instalado, você pode iniciá-lo no iniciador de aplicativos do sistema ou no atalho da área de trabalho. A tela inicial do Eclipse pode ser vista abaixo:
 
 ![](fig07.png)
 
 
 ## Como Remover o Eclipse Completamente 
 
-O Eclipse é instalado por padrão no diretório *home* do usuário. Basta abrir o gerenciador de arquivos e remover a pasta **eclipse** e a pasta **eclipse-workspace**.
+O Eclipse é instalado por padrão no diretório *home* do usuário (Pasta Pessoal). Basta abrir o gerenciador de arquivos e remover a pasta **eclipse** e a pasta **eclipse-workspace**. 
 
 ![](fig08.png)
 
