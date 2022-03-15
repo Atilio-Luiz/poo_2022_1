@@ -95,7 +95,7 @@ public class Hello {
 
 Exemplo de tela:
 
-![](fig04.png)
+![](fig05.png)
 
 
 Salve o arquivo **(CTRL+O)** e então saia do programa **(CTRL+X)**.
