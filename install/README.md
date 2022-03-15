@@ -45,3 +45,13 @@ java --version
 Exemplo de saída:
 
 ![](fig02.png)
+
+As atualizações do JDK são tratadas com os comandos **update** e **upgrade** do **apt**. No entanto, você pode removê-lo separadamente ou completamente se não precisar mais do JDK.
+
+Exemplo de comando para remoção do JDK: 
+
+```
+sudo apt-get remove openjdk-17-jdk --purge
+```
+
+**Atenção:** O comando acima removerá quaisquer dependências restantes e tentará remover o máximo possível de dados referentes à instalação.
