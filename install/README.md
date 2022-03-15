@@ -48,7 +48,9 @@ Exemplo de saída:
 
 ### 3. Configurando a variável de ambiente
 
-Agora você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
+As variáveis de ambiente `JAVA_HOME` e `PATH` são usadas por algumas aplicações a fim de determinar o local em que a instalação do Java foi feita.
+
+Agora, você precisa definir as variáveis ​​de ambiente, copie e cole os comandos abaixo no seu terminal.
 
 ```bash
 export JAVA_HOME=/opt/jdk-17.0.2
@@ -119,6 +121,7 @@ Exemplo de saída:
 Parabéns! Tudo está funcionando corretamente.
 
 
+
 ## Removendo o OpenJDK 17 do seu sistema
 
 As atualizações do JDK são tratadas com os comandos **update** e **upgrade** do **apt**. No entanto, você pode removê-lo separadamente ou completamente se não precisar mais do JDK.
@@ -130,3 +133,25 @@ sudo apt-get remove openjdk-17-jdk --purge
 ```
 
 **Atenção:** O comando acima removerá quaisquer dependências restantes e tentará remover o máximo possível de dados referentes à instalação.
+
+
+
+## Configurando a versão default
+
+Se você tiver várias versões do Java instaladas no seu sistema Linux, você pode verificar qual versão está definida como padrão digitando:
+
+```bash
+java --version
+```
+
+Para mudar a versão default, use o comando `update-alternatives` como a seguir:
+
+```bash
+sudo update-alternatives --config java
+```
+
+A saída deve ser parecida com a mostrada abaixo:
+
+![](fig06.png)
+
+A tela acima mostra uma lista de todas as versões Java instaladas. Digite o número da versão que deseja usar como padrão e pressione **Enter**.
