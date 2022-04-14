@@ -2,7 +2,7 @@
 
 Este tutorial vale para o Visual Studio Code 1.63.0 ou qualquer versão mais recente.
 
-Baixe o [JDK 11 ou outro mais recente](http://jdk.java.net/) no seu sistema operacional. Certifique-se de que a variável de ambiente `JAVA_HOME` está apropriadamente inicializada para o diretório de instalação do JDK. 
+Baixe o [JDK 11 ou outro mais recente](http://jdk.java.net/) no seu sistema operacional. Certifique-se de que a variável de ambiente `JAVA_HOME` está apropriadamente inicializada para o diretório de instalação do JDK. Se ainda não tiver baixado, pode seguir o tutorial que está neste [LINK](https://github.com/Atilio-Luiz/poo_2022_1/blob/master/install/OpenJDK17/README.md)
 
 ### Java
 
