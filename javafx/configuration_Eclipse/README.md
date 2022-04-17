@@ -98,3 +98,63 @@ As figuras abaixo ilustram os passos descritos acima:
 ---
 
 ## 03. Criando um novo projeto JavaFX no Eclipse
+
+**Criação do projeto:**
+
+- *File -> New -> Other -> JavaFX Project -> Clique em Next*
+- Dê um nome ao projeto, desmarque a opção *Create module-info.java file* e, depois, clique *Next*
+- Na aba *Libraries*, selecione *Modulepath*, clique em *Add Library*, selecione *User Library*, selecione a bilioteca *JavaFX18* que você criou em passos anteriores
+- Clique *Finish*
+
+![](images/t01.png)
+
+![](images/t02.png)
+
+![](images/t03.png)
+
+![](images/t04.png)
+
+![](images/t05.png)
+
+
+
+**Configuração do build:**
+
+- Botão direito no projeto -> Run As -> Run Configurations -> Arguments -> VM Arguments
+- Copiar o conteúdo abaixo, adaptando a parte em negrito para o caminho da pasta *lib* na sua máquina:
+    - --module-path **CAMINHO_DO_JAVAFX_LIB** --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web
+
+**Código da classe Main.java:**
+
+```java
+package application;
+	
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			BorderPane root = new BorderPane();
+			Scene scene = new Scene(root,400,400);
+			scene.getStylesheets().add(getClass()
+				 .getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
+```
+
+
+![](images/t06.png)
