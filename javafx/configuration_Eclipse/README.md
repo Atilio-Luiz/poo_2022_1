@@ -20,6 +20,8 @@ No Ubuntu, para descobrir o diretório em que o SceneBuilder foi instalado, diga
 
 ![](images/terminal.png)
 
+Como indica a primeira linha da saída na figura acima, o caminho para o executável do SceneBuilder no meu sistema é: `opt/scenebuilder/bin/SceneBuilder`
+
 
 
 ## 02. Preparação do Eclipse
