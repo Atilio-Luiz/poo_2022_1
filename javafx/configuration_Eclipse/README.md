@@ -124,7 +124,15 @@ As figuras abaixo ilustram os passos descritos acima:
 - Copiar o conteúdo abaixo, adaptando a parte em negrito para o caminho da pasta *lib* na sua máquina:
     - --module-path **CAMINHO_DO_JAVAFX_LIB** --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web
 
+![](images/r01.png)
+
+![](images/r03.png)
+
 **Código da classe Main.java:**
+
+Pronto! Neste momento, um projeto JavaFX  já foi criado no Eclipse e já está pronto para ser executado!
+
+O projeto padrão criado pelo Eclipse já vem com uma classe *Main* padrão que cria uma tela em branco. O código da classe Main é exibido abaixo, juntamente com a tela inicial do projeto no Eclipse.
 
 ```java
 package application;
