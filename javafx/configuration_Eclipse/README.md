@@ -60,7 +60,9 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 ## Referenciar o SceneBuilder no Eclipse
 
-- Windows -> Preferences -> JavaFX
+Com o Eclipse aberto, siga os seguintes passos:
+
+- Vá para o menu e siga o seguinte caminho: *Windows -> Preferences -> JavaFX*
     - Vai aparecer a janela abaixo.
 
 ![](images/scene04.png)
