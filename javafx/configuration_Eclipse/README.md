@@ -77,6 +77,19 @@ Com o Eclipse aberto, siga os seguintes passos:
 
 ## Criar uma User Library no Eclipse com o nome de JavaFX18
 
-- *Window* -> *Preferences* -> *Java* -> *Build Path* -> *User Libraries* -> *New*
+Com o Eclipse aberto, siga os seguintes passos:
+
+- Vá para o menu e siga o caminho: *Window -> Preferences -> Java -> Build Path -> User Libraries -> New*
 - Dê o nome de **JavaFX18**
 - Clique em *Add External Jars* (aponte para a pasta bin do JavaFX)
+- Clique em **Apply and Close**
+
+As figuras abaixo ilustram os passos descritos acima:
+
+![](images/tela01.png)
+
+![](images/tela02.png)
+
+![](images/tela03.png)
+
+![](images/tela04.png)
