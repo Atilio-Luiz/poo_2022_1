@@ -49,7 +49,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 - Com o Eclipse aberto, vá na opção Help -> Eclipse Marketplace -> na caixa de texto **Find** digite o nome do plugin **E(fx)clipse** e tecle ENTER. No momento da escrita desse guia, a versão é a 3.7.0. Instale a versão mais recente disponível. A tela da janela do Eclipse Marketplace é exibida logo abaixo.
 
-- Vai aparecer o plugin. Clique em instalar. Ele vai iniciar a instalação do plugin. Se houver alguma licensa a ser aprovada, aprove e clique `Finish` para finalizar.
+- Vai aparecer o plugin. Clique em **Install**. Ele vai iniciar a instalação do plugin. Se houver alguma licensa a ser aprovada, aprove e clique `Finish` para finalizar.
 
 - Ele pedirá para reiniciar o Eclipe. Reinicie.
 
