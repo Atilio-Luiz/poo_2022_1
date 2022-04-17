@@ -26,7 +26,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 ## 02. Preparação do Eclipse
 
-- **Atenção:** Baixe e instale a versão mais recente do Eclipse. No momento da escrita deste tutorial, a versão mais recente é a 2022-03 (4.23.0)
+- **Atenção:** Baixe e instale a versão mais recente do Eclipse. No momento da escrita deste guia, a versão mais recente é a 2022-03 (4.23.0)
  - Download: https://www.eclipse.org/downloads/
 
 
@@ -47,7 +47,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 ## Instalar o plug-in E(fx)clipse no Eclipse
 
-- Com o Eclipse aberto, vá na opção Help -> Eclipse Marketplace -> na caixa de texto `Find` digite o nome do plugin *E(fx)clipse* e tecle ENTER. No momento da escrita desse guia, a versão é a 3.7.0. Instale a versão mais recente disponível.
+- Com o Eclipse aberto, vá na opção Help -> Eclipse Marketplace -> na caixa de texto `Find` digite o nome do plugin *E(fx)clipse* e tecle ENTER. No momento da escrita desse guia, a versão é a 3.7.0. Instale a versão mais recente disponível. A tela da janela do Eclipse Marketplace é exibida logo abaixo.
 
 - Vai aparecer o plugin. Clique em instalar. Ele vai iniciar a instalação do plugin. Se houver alguma licensa a ser aprovada, aprove e clique `Finish` para finalizar.
 
