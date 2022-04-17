@@ -1,4 +1,4 @@
-## Baixando um exemplo de projeto JavaFX 17 feito no Visual Studio Code e configurando na sua máquina
+## Baixando um exemplo de projeto JavaFX feito no Visual Studio Code e configurando na sua máquina
 
 Este tutorial vale para o Visual Studio Code 1.63.0 ou qualquer versão mais recente.
 
