@@ -122,8 +122,8 @@ As figuras abaixo ilustram os passos descritos acima:
 
 Para que o seu projeto seja compilado com sucesso, é preciso realizar mais uma configuração. Será preciso configurar a variável de ambiente **vmArgs**. Isso pode ser feito no Eclipse seguindo os passos abaixo.
 
-- Botão direito no projeto -> Run As -> Run Configurations -> Arguments -> VM Arguments (Com isso, aparecerá a tela abaixo)
-- Copiar o conteúdo abaixo, adaptando a parte em negrito para o caminho da pasta *lib* na sua máquina:
+- Botão direito no projeto -> Run As -> Run Configurations -> Selecione a aba *Arguments* -> vá para a caixa de texto *VM Arguments* (a janela que aparecerá está ilustrada na figura abaixo)
+- Copiar o conteúdo abaixo na caixa de texto *VM Arguments*, adaptando a parte em negrito para o caminho da pasta *lib* na sua máquina:
     - --module-path **CAMINHO_DO_JAVAFX_LIB** --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web
 
 ![](images/r03.png)
