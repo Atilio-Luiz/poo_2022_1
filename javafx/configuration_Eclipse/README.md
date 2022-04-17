@@ -164,5 +164,13 @@ public class Main extends Application {
 }
 ```
 
-
 ![](images/t06.png)
+
+
+**Executando a aplicação**
+
+- Clicar com o botão direito na classe *Main.java* -> *Run as* -> *Java Application*
+
+A tela abaixo aparecerá.
+
+![](images/t09.png)
