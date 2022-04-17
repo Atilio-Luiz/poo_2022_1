@@ -32,7 +32,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 ### Baixe o JavaFX SDK 18
 
-- Baixar biblioteca do JavaFX 18 em [gluonhq](https://gluonhq.com/products/javafx/).
+- Baixar a versão mais recente da biblioteca do JavaFX em [gluonhq](https://gluonhq.com/products/javafx/).
 - Baixe o arquivo **JavaFX SDK** certo para o seu SO.
     - Na página de downloads é possível selecionar o SO (Linux, Windows), a arquitetura (x64) e o tipo (SDK), como ilustrado na imagem abaixo.
 
