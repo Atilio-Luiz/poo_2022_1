@@ -1,4 +1,4 @@
-# Configurando o JavaFX 18 no Eclipse
+# Configurando o JavaFX no Eclipse
 
 ## 01. Instalação do Scene Builder
 
