@@ -12,7 +12,7 @@ Após baixar o arquivo de instalação do SceneBuilder, descompacte o arquivo e 
 
 ![](images/scene.png)
 
-No Ubuntu, para descobrir o diretório em que o SceneBuilder foi instalado, diga os seguintes passos:
+No Ubuntu, para descobrir o diretório em que o SceneBuilder foi instalado, siga os seguintes passos:
 
 1. Inicie o Scene Builder
 2. Mostre o caminho para o executável rodando o seguinte comando no terminal: 
