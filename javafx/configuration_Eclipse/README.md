@@ -101,7 +101,7 @@ As figuras abaixo ilustram os passos descritos acima:
 
 **Criação do projeto:**
 
-- *File -> New -> Other -> JavaFX Project -> Clique em Next*
+- *File -> New -> Other -> JavaFX Project -> Clique em Next* (Veja tela ilustrativa abaixo)
 - Dê um nome ao projeto, desmarque a opção *Create module-info.java file* e, depois, clique *Next*
 - Na aba *Libraries*, selecione *Modulepath*, clique em *Add Library*, selecione *User Library*, selecione a bilioteca *JavaFX18* que você criou em passos anteriores
 - Clique *Finish*
