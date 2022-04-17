@@ -45,7 +45,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 ![](images/pasta_lib.png)
 
 
-## Instalar o plug-in E(fx)clipse no Eclipse
+### Instale o plug-in E(fx)clipse no Eclipse
 
 - Com o Eclipse aberto, vá na opção Help -> Eclipse Marketplace -> na caixa de texto `Find` digite o nome do plugin *E(fx)clipse* e tecle ENTER. No momento da escrita desse guia, a versão é a 3.7.0. Instale a versão mais recente disponível. A tela da janela do Eclipse Marketplace é exibida logo abaixo.
 
@@ -58,7 +58,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 ![](images/plugin02.png)
 
 
-## Referenciar o SceneBuilder no Eclipse
+### Referencie o SceneBuilder no Eclipse
 
 Com o Eclipse aberto, siga os seguintes passos:
 
@@ -75,7 +75,7 @@ Com o Eclipse aberto, siga os seguintes passos:
 ![](images/scene03.png)
 
 
-## Criar uma User Library no Eclipse com o nome de JavaFX18
+### Crie uma User Library no Eclipse com o nome de JavaFX18
 
 Com o Eclipse aberto, siga os seguintes passos:
 
