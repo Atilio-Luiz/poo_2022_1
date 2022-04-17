@@ -51,7 +51,7 @@ Como indica a primeira linha da saída na figura acima, o caminho para o execut�
 
 - Vai aparecer o plugin. Clique em instalar. Ele vai iniciar a instalação do plugin. Se houver alguma licensa a ser aprovada, aprove e clique `Finish` para finalizar.
 
-- Ele pedirá para reinicializar o Eclipe. Reinicialize.
+- Ele pedirá para reiniciar o Eclipe. Reinicie.
 
 ![](images/plugin01.png)
 
