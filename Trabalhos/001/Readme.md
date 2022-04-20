@@ -119,7 +119,7 @@ class Car{
     void leave();
     void fuel(int gas);
     void drive (int km);
-};
+}
 // Não mexa na classe abaixo. 
 // Ela já está finalizada e pronta para compilar.
 class Solver{
