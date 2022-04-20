@@ -99,7 +99,7 @@ $end
 ***
 ## Esqueleto
 
-Logo abaixo, encontram-se três sugestões de classes. A classe **Car** está incompleta e você deve completá-la a fim de resolver esta atividade. A Classe **Solver** e a classe **Manual** são aplicações, elas possuem uma função `main` e podem ser utilizadas para rodar a aplicação. A diferença entre elas é que **Solver** lê os comandos do usuário até que ele digite `end` para terminar. Já a classe **Manual** contém um conjunto finito e fixo de testes. 
+Logo abaixo, encontram-se três classes que **devem obrigatoriamente** ser utilizadas para solucionar a atividade. A classe **Car** está incompleta e você deve completá-la a fim de resolver esta atividade. A Classe **Solver** e a classe **Manual** são aplicações, elas possuem uma função `main` e podem ser utilizadas para rodar a aplicação. A diferença entre elas é que **Solver** lê os comandos do usuário até que ele digite `end` para terminar. Já a classe **Manual** contém um conjunto finito e fixo de testes. 
 
 Ao preparar sua atividade, use as boas práticas de programação em POO discutidas em sala, incluindo fornecer modificadores de acesso adequados para atributos e métodos.
 
