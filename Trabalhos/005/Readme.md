@@ -45,7 +45,8 @@ A classe deverá ter os seguintes métodos:
     - `(a + bi) ∗ (c + di) = (ac − bd) + (ad + bc)i`
 
 - **divide**: que recebe outra instância da classe **NumeroComplexo** e divide o número encapsulado pelo passado como argumento usando a fórmula:
-    - `![function1](https://latex.codecogs.com/svg.image?\frac{a&plus;bi}{c&plus;di}=\frac{ac&plus;bd}{c^{2}&plus;d^{2}}&plus;\frac{bc-ad}{c^2&plus;d^2}i)`
+
+![function1](https://latex.codecogs.com/svg.image?\frac{a&plus;bi}{c&plus;di}=\frac{ac&plus;bd}{c^{2}&plus;d^{2}}&plus;\frac{bc-ad}{c^2&plus;d^2}i)
 
 <!-- \frac{a+bi}{c+di}=\frac{ac+bd}{c^{2}+d^{2}}+\frac{bc-ad}{c^2+d^2}i -->
 
