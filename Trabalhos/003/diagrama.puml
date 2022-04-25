@@ -1,0 +1,36 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  +class Pet {
+    - age : int
+    - alive : boolean
+    - cleanMax : int
+    - diamonds : int
+    - energy : int
+    - energyMax : int
+    - hungry : int
+    - hungryMax : int
+    - shower : int
+    ___
+    + Pet(energy : int, hungry : int, shower : int)
+    + toString() : String
+    ..
+    + eat()
+    + play()
+    + shower()
+    + sleep()
+    ..
+    + getClean() : int
+    + getCleanMax() : int
+    + getEnergy() : int
+    + getEnergyMax() : int
+    + getHungry() : int
+    + getHungryMax() : int
+    + setClean(value : int)
+    + setEnergy(value : int)
+    + setHungry(value : int)
+    ..
+    - testAlive() : boolean
+  }
+}
+@enduml
