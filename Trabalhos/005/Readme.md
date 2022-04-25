@@ -44,6 +44,8 @@ A classe deverá ter os seguintes métodos:
 
 ***
 
+## Diagrama
+
 ![](diagrama.png)
 
 ***
