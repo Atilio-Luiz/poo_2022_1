@@ -1,0 +1,22 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Time {
+    - hour : int
+    - minute : int
+    - second : int
+    __
+    + Time(hour : int, minute : int, second : int)
+    + nextSecond()
+    ..
+    + getHour() : int
+    + getMinute() : int
+    + getSecond() : int
+    + setHour(hour : int)
+    + setMinute(minute : int)
+    + setSecond(second : int)
+    ..
+    + toString() : String
+  }
+}
+@enduml
