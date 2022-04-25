@@ -23,7 +23,7 @@ A classe deverá ter os seguintes métodos:
 
 - **construtor**: que recebe dois valores de ponto flutuante como argumentos para inicializar os campos da classe (parte real e imaginária)
 
-- **toString**: que deve retornar uma String contendo o número complexo encapsulado usando a notação `a + bi` onde `a` é a parte real e `b` a imaginária.
+- **toString**: que deve retornar uma String contendo o número complexo encapsulado usando a notação `(a + bi)` onde `a` é a parte real e `b` a imaginária.
 
 - **equals**: que recebe outra instância da classe **ComplexNumber** e retorna *true* se os valores dos campos encapsulados forem iguais aos da instância passada como argumento.
 
