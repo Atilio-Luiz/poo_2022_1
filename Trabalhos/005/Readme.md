@@ -92,8 +92,13 @@ public class Manual {
         if(p2.equals(p4)) System.out.printf("%s == %s%n", p2, p4);
         else System.out.printf("%s != %s%n", p2, p4);
 
-        if(p2 == p4) System.out.println("p2 e p4 referenciam o mesmo objeto");
-        else System.out.printf("p2 e p4 referenciam objetos diferentes");
+        ComplexNumber p5 = new ComplexNumber(p3.getReal(), p3.getImaginary());
+
+        if(p3 == p5) System.out.println("p3 e p5 referenciam o mesmo objeto");
+        else System.out.println("p3 e p5 referenciam objetos diferentes");
+
+        if(p3.equals(p5)) System.out.printf("%s == %s%n", p3, p5);
+        else System.out.printf("%s != %s%n", p3, p5);
     }
 }
 ```
