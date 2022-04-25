@@ -53,85 +53,37 @@ A classe deverá ter os seguintes métodos:
 
 <!--FILTER Solver.java java-->
 ```java
-class Manual {
-    public static void main(String[] args) {
-        //case inicio
-        Pet pet = new Pet(20, 10, 15);
-        System.out.print(pet);
-        //E:20/20, S:10/10, L:15/15, D:0, I:0
-        pet = new Pet(10, 20, 50);
-        System.out.print(pet);
-        //E:10/10, S:20/20, L:50/50, D:0, I:0
+public class Manual {
+    public static void main(String[] args) throws Exception {
+        Locale.setDefault(Locale.US);
 
-        //case play - Brincar 
-        pet = new Pet(20, 10, 15);
-        pet.play();
-        System.out.print(pet);
-        //E:18/20, S:9/10, L:12/15, D:1, I:1
-        pet.play();
-        System.out.print(pet);
-        //E:16/20, S:8/10, L:9/15, D:2, I:2
+        // cria três objetos da classe ComplexNumber p1, p2 e p3
+        ComplexNumber p1 = new ComplexNumber(1, 2);
+        ComplexNumber p2 = new ComplexNumber(3, 4);
+        ComplexNumber p3 = new ComplexNumber(5.3, 7.8);
 
-        //case comer 
-        pet.eat();
-        System.out.print(pet);
-        //E:15/20, S:10/10, L:7/15, D:2, I:3
+        // cria uma referência para apontar os resultados das operações
+        ComplexNumber resultado;
+        
+        // imprime: (1.00 + 2.00i) + (3.00 + 4.00i) = (4.00 + 6.00i)
+        resultado = p1.sum(p2);
+        System.out.printf("%s + %s = %s%n", p1, p2, resultado);
 
-        //case dormir
-        pet.sleep();
-        System.out.print(pet);
-        //E:20/20, S:9/10, L:7/15, D:2, I:8
+        // imprime: (5.30 + 7.80i) - (5.30 + 7.80i) = (0.00 + 0.00i)
+        resultado = p3.subtract(p3);
+        System.out.printf("%s - %s = %s%n", p3, p3, resultado);
 
-        //case tomar banho
-        pet.shower();
-        System.out.print(pet);
-        //E:17/20, S:8/10, L:15/15, D:2, I:10
+        // imprime: (5.30 + 7.80i) - (1.00 + 2.00i) = (4.30 + 5.80i)
+        resultado = p3.subtract(p1);
+        System.out.printf("%s - %s = %s%n", p3, p1, resultado);
 
-        //case dormir sem sono
-        pet.sleep();
-        //fail: nao esta com sono
+        // imprime: (1.00 + 2.00i) * (5.30 + 7.80i) = (-10.30 + 18.40i)
+        resultado = p1.multiply(p3);
+        System.out.printf("%s * %s = %s%n", p1, p3, resultado);
 
-        //case morrer
-        pet.play();
-        pet.play();
-        pet.play();
-        pet.play();
-        System.out.print(pet);
-        //E:9/20, S:4/10, L:3/15, D:6, I:14
-        pet.play();
-        //fail: pet morreu de sujeira
-        System.out.print(pet);
-        //E:7/20, S:3/10, L:0/15, D:7, I:15
-        pet.play();
-        //fail: pet esta morto
-        pet.eat();
-        //fail: pet esta morto
-        pet.shower();
-        //fail: pet esta morto
-        pet.sleep();
-        //fail: pet esta morto
-
-        //case exemplo2
-        pet = new Pet(5, 10, 10);
-        pet.play();
-        pet.play();
-        pet.play();
-        //fail: pet morreu de fraqueza
-        pet.play();
-        //fail: pet esta morto
-        System.out.print(pet);
-        //E:0/5, S:7/10, L:1/10, D:3, I:3
-
-        //case exemplo3
-        pet = new Pet(10, 3, 10);
-        pet.play();
-        pet.play();
-        pet.play();
-        //fail: pet morreu de fome
-        pet.play();
-        //fail: pet esta morto
-        System.out.print(pet);
-        //E:4/10, S:0/3, L:1/10, D:3, I:3
+        // imprime: (3.00 + 4.00i) / (5.30 + 7.80i) = (0.53 + -0.02i)
+        resultado = p2.divide(p3);
+        System.out.printf("%s / %s = %s%n", p2, p3, resultado);
     }
 }
 ```
