@@ -2,14 +2,6 @@
 
 ![](figura.png)
 
-<!--TOC_BEGIN-->
-- [Requisitos](#requisitos)
-- [Shell](#shell)
-    - [Exemplo 1](#exemplo-1)
-    - [Exemplo 2](#exemplo-2)
-    - [Exemplo 3](#exemplo-3)
-- [Esqueleto](#esqueleto)
-<!--TOC_END-->
 
 Os números complexos são números compostos por uma **parte real** e **uma parte imaginária**. Eles representam o conjunto de todos os pares ordenados (x, y), cujos elementos pertencem ao conjunto dos números reais (`ℝ`).
 
