@@ -53,6 +53,10 @@ A classe deverá ter os seguintes métodos:
 
 <!--FILTER Solver.java java-->
 ```java
+public class ComplexNumber {
+    // programar
+}
+
 public class Manual {
     public static void main(String[] args) throws Exception {
         Locale.setDefault(Locale.US);
