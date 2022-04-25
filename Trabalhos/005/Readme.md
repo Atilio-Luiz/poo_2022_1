@@ -1,6 +1,6 @@
 # Números Complexos
 
-![](figura.jpg)
+![](figura.png)
 
 <!--TOC_BEGIN-->
 - [Requisitos](#requisitos)
