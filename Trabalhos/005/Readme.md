@@ -14,7 +14,7 @@ onde:
 - x é um número real indicado por: `x = Re(z)`, sendo a parte real de z.
 - y é um número real indicado por: `y = Im(z)`, sendo a parte imaginária de z.
 
-**Sua tarefa nesta atividade é:** Escrever em Java a classe *NumeroComplexo* que represente um número complexo. Seu sistema deve ter pelo menos duas classes, a classe *NumeroComplexo* e a classe *Manual*
+**Sua tarefa nesta atividade é:** Escrever em Java a classe *ComplexNumber* que represente um número complexo. Seu sistema deve ter pelo menos duas classes, a classe *ComplexNumber* e a classe *Manual*
 
 ***
 
@@ -25,18 +25,18 @@ A classe deverá ter os seguintes métodos:
 
 - **toString**: que deve retornar uma String contendo o número complexo encapsulado usando a notação `a + bi` onde `a` é a parte real e `b` a imaginária.
 
-- **equals**: que recebe outra instância da classe **NumeroComplexo** e retorna *true* se os valores dos campos encapsulados forem iguais aos da instância passada como argumento.
+- **equals**: que recebe outra instância da classe **ComplexNumber** e retorna *true* se os valores dos campos encapsulados forem iguais aos da instância passada como argumento.
 
-- **sum**: que recebe outra instância da classe **NumeroComplexo** e soma este número complexo com o encapsulado usando a fórmula:
+- **sum**: que recebe outra instância da classe **ComplexNumber** e soma este número complexo com o encapsulado usando a fórmula:
     - `(a + bi) + (c + di) = (a + c) + (b + d)i`
 
-- **subtract**: que recebe outra instância da classe **NumeroComplexo** e subtrai o argumento do número complexo encapsulado usando a fórmula:
+- **subtract**: que recebe outra instância da classe **ComplexNumber** e subtrai o argumento do número complexo encapsulado usando a fórmula:
     - `(a + bi) − (c + di) = (a − c) + (b − d)i`
 
-- **multiply**: que recebe outra instância da classe **NumeroComplexo** e multiplica este número complexo com o encapsulado usando a fórmula:
+- **multiply**: que recebe outra instância da classe **ComplexNumber** e multiplica este número complexo com o encapsulado usando a fórmula:
     - `(a + bi) ∗ (c + di) = (ac − bd) + (ad + bc)i`
 
-- **divide**: que recebe outra instância da classe **NumeroComplexo** e divide o número encapsulado pelo passado como argumento usando a fórmula:
+- **divide**: que recebe outra instância da classe **ComplexNumber** e divide o número encapsulado pelo passado como argumento usando a fórmula:
 
     - ![function1](https://latex.codecogs.com/svg.image?\frac{a&plus;bi}{c&plus;di}=\frac{ac&plus;bd}{c^{2}&plus;d^{2}}&plus;\frac{bc-ad}{c^2&plus;d^2}i)
 
