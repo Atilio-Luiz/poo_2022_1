@@ -84,6 +84,16 @@ public class Manual {
         // imprime: (3.00 + 4.00i) / (5.30 + 7.80i) = (0.53 + -0.02i)
         resultado = p2.divide(p3);
         System.out.printf("%s / %s = %s%n", p2, p3, resultado);
+
+        if(p1.equals(p3)) System.out.printf("%s == %s%n", p1, p3);
+        else System.out.printf("%s != %s%n", p1, p3);
+
+        ComplexNumber p4 = p2;
+        if(p2.equals(p4)) System.out.printf("%s == %s%n", p2, p4);
+        else System.out.printf("%s != %s%n", p2, p4);
+
+        if(p2 == p4) System.out.println("p2 e p4 referenciam o mesmo objeto");
+        else System.out.printf("p2 e p4 referenciam objetos diferentes");
     }
 }
 ```
