@@ -89,18 +89,22 @@ public class Manual {
         resultado = p2.divide(p3);
         System.out.printf("%s / %s = %s%n", p2, p3, resultado);
 
+        // imprime: (1.00 + 2.00i) != (5.30 + 7.80i)
         if(p1.equals(p3)) System.out.printf("%s == %s%n", p1, p3);
         else System.out.printf("%s != %s%n", p1, p3);
 
+        // imprime: (3.00 + 4.00i) == (3.00 + 4.00i)
         ComplexNumber p4 = p2;
         if(p2.equals(p4)) System.out.printf("%s == %s%n", p2, p4);
         else System.out.printf("%s != %s%n", p2, p4);
 
         ComplexNumber p5 = new ComplexNumber(p3.getReal(), p3.getImaginary());
 
+        // imprime: p3 e p5 referenciam objetos diferentes
         if(p3 == p5) System.out.println("p3 e p5 referenciam o mesmo objeto");
         else System.out.println("p3 e p5 referenciam objetos diferentes");
 
+        // imprime: (5.30 + 7.80i) == (5.30 + 7.80i)
         if(p3.equals(p5)) System.out.printf("%s == %s%n", p3, p5);
         else System.out.printf("%s != %s%n", p3, p5);
     }
