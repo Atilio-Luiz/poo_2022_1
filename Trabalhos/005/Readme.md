@@ -22,7 +22,7 @@ onde:
 - x é um número real indicado por: `x = Re(z)`, sendo a parte real de z.
 - y é um número real indicado por: `y = Im(z)`, sendo a parte imaginária de z.
 
-**Sua tarefa nesta atividade é:** Escrever em Java a classe *NumeroComplexo* que represente um número complexo. 
+**Sua tarefa nesta atividade é:** Escrever em Java a classe *NumeroComplexo* que represente um número complexo. Seu sistema deve ter pelo menos duas classes, a classe *NumeroComplexo* e a classe *Manual*
 
 ***
 
