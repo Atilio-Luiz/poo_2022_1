@@ -90,8 +90,8 @@ class Client {
     public void setFone(String fone);
 }
 class Sala{
-    private List<Client> cadeiras;
-    public List<Client> getCadeiras();
+    private ArrayList<Client> cadeiras;
+    public ArrayList<Client> getCadeiras();
     public Sala(int capacidade);
     public boolean reservar(String id, String fone, int ind);
     public void cancelar(String id);
