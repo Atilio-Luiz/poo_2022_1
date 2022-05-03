@@ -1,0 +1,26 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Client {
+    - fone : String
+    - id : String
+    __
+    + Client(id : String, fone : String)
+    + getFone() : String
+    + getId() : String
+    + setFone(fone : String)
+    + setId(id : String)
+    + toString() : String
+  }
+  class Sala {
+    - cadeiras : ArrayList<Client>
+    __
+    + Sala(capacidade : int)
+    + cancelar(id : String)
+    + reservar(id : String, fone : String, ind : int) : boolean
+    + getCadeiras() : ArrayList<Client>
+    + toString() : String
+  }
+}
+Sala "1" o-- "0..*" Client
+@enduml
