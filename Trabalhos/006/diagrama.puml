@@ -22,5 +22,5 @@ package com.qxcode {
     + toString() : String
   }
 }
-Sala "1" -- "0..*" Client
+Sala "1" *-- "0..*" Client
 @enduml
