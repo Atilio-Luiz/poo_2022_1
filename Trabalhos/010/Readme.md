@@ -8,7 +8,6 @@
 - [Ajuda](#ajuda)
 - [Diagrama](#diagrama)
 - [Esqueleto](#esqueleto)
-- [Adaptações para C++](#adaptações-para-c)
 <!--TOC_END-->
 
 Você já deve ter ido em algum parque e viu crianças de 4 a 10 anos andando naquelas motocas motorizadas. Pois é, nós vamos modelar e implementar uma delas.
@@ -276,16 +275,3 @@ class Manual{
 }
 ```
 <!--FILTER_END-->
-
-
-## Adaptações para C++
-A Pessoa é representado por uma instância de um shared_ptr<Person>.
-
-```cpp
-class Motorcycle {
-- person : shared_ptr<Person>
-__
-+ enter(person : shared_ptr<Person>) : boolean
-+ leave() : shared_ptr<Person>
-}
-```

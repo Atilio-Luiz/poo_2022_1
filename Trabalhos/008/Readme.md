@@ -8,7 +8,6 @@
 - [Shell](#shell)
 - [Diagrama](#diagrama)
 - [Esqueleto](#esqueleto)
-- [Adaptações para C++](#adaptações-para-c)
 <!--TOC_END-->
 
 Faça o modelo de uma lapiseira que pode conter um único grafite.
@@ -161,13 +160,4 @@ class Solver{
 <!--FILTER_END-->
 
 
-## Adaptações para C++
-O grafite é representado por uma instância de um shared_ptr<Lead>.
 
-```cpp
-class Pencil{
-    shared_ptr<Lead> tip {nullptr};
-public:
-    bool insert(shared_ptr<Lead> lead)
-    shared_ptr<Lead> remove();
-```
