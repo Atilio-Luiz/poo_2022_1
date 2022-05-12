@@ -1,0 +1,35 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Lead {
+    - hardness : String
+    - size : int
+    - thickness : float
+    __
+    + Lead(thickness : float, hardness : String, size : int)
+    + usagePerSheet() : int
+    ..
+    + getHardness() : String
+    + getSize() : int
+    + getThickness() : float
+    + setSize(size : int)
+    ..
+    + toString() : String
+  }
+  class Pencil {
+    - thickness : float
+    - tip : Lead
+    __
+    + Pencil(thickness : float)
+    + hasGrafite() : boolean
+    + insert(grafite : Lead) : boolean
+    + remove() : Lead
+    + writePage()
+    ..
+    + getThickness() : float
+    ..
+    + toString() : String
+  }
+}
+Pencil "1" --> "0..*" Lead
+@enduml
