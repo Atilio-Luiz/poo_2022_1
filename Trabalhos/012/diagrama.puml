@@ -1,0 +1,35 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Motorcycle {
+    - person : Person
+    - power : int
+    - time : int
+    __
+    + Motorcycle(power : int)
+    + buy(time : int)
+    + drive(time : int)
+    + enter(person : Person) : boolean
+    + honk()
+    + leave() : Person
+    ..
+    + getPerson() : Person
+    + getPower() : int
+    + getTime() : int
+    ..
+    + toString() : String
+  }
+  class Person {
+    - age : int
+    - name : String
+    __
+    + Person(name : String, age : int)
+    ..
+    + getAge() : int
+    + getName() : String
+    ..
+    + toString() : String
+  }
+}
+Person "0..1" --o "1" Motorcycle : < Carry
+@enduml

@@ -1,0 +1,54 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  enum Coin {
+    + M10 {static}
+    + M100 {static}
+    + M25 {static}
+    + M50 {static}
+    + value : double
+    + volume : int
+    __
+    + valueOf(name : String) : Coin {static}
+    + values() : Coin[] {static}
+    ..
+    + getDescription() : String
+    + getVolume() : int
+    ..
+    + toString() : String
+  }
+  class Item {
+    - description : String
+    - volume : int
+    __
+    + Item(description : String, volume : int)
+    ..
+    + getDescription() : String
+    + getVolume() : int
+    + setDescription(description : String)
+    + setVolume(volume : int)
+    ..
+    + toString() : String
+  }
+  class Pig {
+    - broken : boolean
+    - itens : String
+    - value : double
+    - volume : int
+    - volumeMax : int
+    __
+    + Pig(volumeMax : int)
+    + addCoin(moeda : Coin) : boolean
+    + addItem(item : Item) : boolean
+    + breakPig() : boolean
+    ..
+    + getCoins() : double
+    + getItens() : String
+    + getVolume() : int
+    + getVolumeMax() : int
+    + isBroken() : boolean
+    ..
+    + toString() : String
+  }
+}
+@enduml
