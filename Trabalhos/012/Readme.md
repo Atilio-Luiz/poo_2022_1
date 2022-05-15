@@ -278,14 +278,3 @@ class Manual{
 <!--FILTER_END-->
 
 
-## Adaptações para C++
-A Pessoa é representado por uma instância de um shared_ptr<Person>.
-
-```cpp
-class Motorcycle {
-- person : shared_ptr<Person>
-__
-+ enter(person : shared_ptr<Person>) : boolean
-+ leave() : shared_ptr<Person>
-}
-```
