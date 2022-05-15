@@ -102,10 +102,10 @@ public class Solver{
         pig.addItem(new Item("travesseiro", 22)); //nao cabe no porco
 
         pig.breakPig();
-        pig.breakPig();
+        pig.breakPig(); //fail: porco ja esta quebrado
 
         System.out.println(pig.getItens());  //ouro, passaporte
-        System.out.println(pig.getCoins()); //0.
+        System.out.println(pig.getCoins()); //0.6
         System.out.println(pig); //I:() M:0 V:9/20 EQ:true
     }
 }
