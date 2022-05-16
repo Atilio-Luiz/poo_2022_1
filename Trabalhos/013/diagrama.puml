@@ -1,0 +1,35 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Pass {
+    - age : int
+    - name : String
+    __
+    + Pass(name : String, age : int)
+    ..
+    + getAge() : int
+    + getName() : String
+    + isPriority() : boolean
+    + setAge(age : int)
+    + setName(name : String)
+    ..
+    + toString() : String
+  }
+  class Topic {
+    - normalSeats : List<Pass>
+    - prioritySeats : List<Pass>
+    __
+    - findByName(name : String, list : List<Pass>) : int {static}
+    - findFirstFreePos(list : List<Pass>) : int {static}
+    - insertOnList(pass : Pass, list : List<Pass>) : boolean {static}
+    - removeFromList(name : String, list : List<Pass>) : boolean {static}
+    ..
+    + Topic(capacity : int, qtdPriority : int)
+    + insert(pass : Pass) : boolean
+    + remove(name : String) : boolean
+    ..
+    + toString() : String
+  }
+}
+Topic "1" o-- "0..*" Pass
+@enduml
