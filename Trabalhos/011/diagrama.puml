@@ -6,14 +6,15 @@ package com.qxcode {
     + M100 {static}
     + M25 {static}
     + M50 {static}
-    + value : double
-    + volume : int
+    - value : double
+    - volume : int
     __
     + valueOf(name : String) : Coin {static}
     + values() : Coin[] {static}
     ..
     + getDescription() : String
     + getVolume() : int
+    + getValue() : double
     ..
     + toString() : String
   }
