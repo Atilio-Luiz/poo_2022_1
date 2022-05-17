@@ -14,7 +14,7 @@ Faça o modelo de uma lapiseira que pode conter um único grafite.
 
 ## Requisitos
 - Iniciar lapiseira
-    - Inicia uma lapiseira de determinado calibre sem grafite no bico.
+    - Inicia uma lapiseira de determinado calibre sem grafite.
 - Inserir grafite
     - Insere um grafite passando
         - o calibre: float.
@@ -23,6 +23,7 @@ Faça o modelo de uma lapiseira que pode conter um único grafite.
     - Não deve aceitar um grafite de calibre não compatível.
 - Remover grafite
     - Retira o grafite se houver algum.
+    - Se não houver grafite, imprimir mensagem de erro: "fail: nao existe grafite"
 - Escrever folha
     - Não é possível escrever se não há grafite ou o grafite tem tamanho menor ou igual a 10mm.
     - Quanto mais macio o grafite, mais rapidamente ele se acaba. Para simplificar, use a seguinte regra:
@@ -31,8 +32,9 @@ Faça o modelo de uma lapiseira que pode conter um único grafite.
         - Grafite 4B: 4mm por folha.
         - Grafite 6B: 6mm por folha.
         
-    - O último centímetro de um grafite não pode ser aproveitado, quando o grafite estiver com 10mm, não é mais possível escrever.
+    - Os últimos 10 milímetros de um grafite não podem ser aproveitados. Quando o grafite tiver comprimento menor ou igual a 10mm, não é mais possível escrever e o grafite deve ser retirado.
     - Se não houver grafite suficiente para terminar a folha, avise que o texto ficou incompleto.
+    - Avise quando o grafite acabar.
 
 
 ## Shell
