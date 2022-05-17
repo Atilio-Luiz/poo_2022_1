@@ -30,5 +30,5 @@ package com.qxcode {
     + toString() : String
   }
 }
-Pencil "1" o--  "0..*" Lead : > Stores
+Pencil "1" *--  "0..*" Lead : stores
 @enduml

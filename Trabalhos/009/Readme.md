@@ -8,7 +8,7 @@
 - [Esqueleto](#esqueleto)
 <!--TOC_END-->
 
-Faça o modelo de uma lapiseira que pode conter vários.
+Faça o modelo de uma lapiseira que pode conter vários grafites.
 
 ## Requisitos
 - Iniciar lapiseira
@@ -36,7 +36,7 @@ Faça o modelo de uma lapiseira que pode conter vários.
         - Grafite 4B: 4mm por folha.
         - Grafite 6B: 6mm por folha.
         
-    - O último centímetro de um grafite não pode ser aproveitado, quando o grafite estiver com 10mm, não é mais possível escrever e o grafite deve ser retirado.
+    - Os últimos 10 milímetros de um grafite não podem ser aproveitados. Quando o grafite estiver com 10mm, não é mais possível escrever e o grafite deve ser retirado.
     - Se não houver grafite suficiente para terminar a folha, avise que o texto ficou incompleto.
     - Avise quando o grafite acabar.
 
@@ -98,7 +98,7 @@ $end
 
 ## Diagrama
 
-![](diagrama.png)
+![](diagrama/diagrama.png)
 
 
 ***
