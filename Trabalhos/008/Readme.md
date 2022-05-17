@@ -93,7 +93,7 @@ $end
 
 ## Diagrama
 
-![](diagrama.png)
+![](diagrama/diagrama.png)
 
 
 ***

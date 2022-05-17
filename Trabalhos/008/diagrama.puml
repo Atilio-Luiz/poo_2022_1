@@ -31,5 +31,5 @@ package com.qxcode {
     + toString() : String
   }
 }
-Pencil "1" --> "0..*" Lead
+Pencil "1" *-- "0..1" Lead : contains
 @enduml
