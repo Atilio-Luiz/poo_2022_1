@@ -19,10 +19,10 @@ package com.qxcode {
     - normalSeats : List<Pass>
     - prioritySeats : List<Pass>
     __
-    - findByName(name : String, list : List<Pass>) : int {static}
-    - findFirstFreePos(list : List<Pass>) : int {static}
-    - insertOnList(pass : Pass, list : List<Pass>) : boolean {static}
-    - removeFromList(name : String, list : List<Pass>) : boolean {static}
+    - findByName(name : String, list : List<Pass>) : int
+    - findFirstFreePos(list : List<Pass>) : int 
+    - insertOnList(pass : Pass, list : List<Pass>) : boolean 
+    - removeFromList(name : String, list : List<Pass>) : boolean 
     ..
     + Topic(capacity : int, qtdPriority : int)
     + insert(pass : Pass) : boolean
