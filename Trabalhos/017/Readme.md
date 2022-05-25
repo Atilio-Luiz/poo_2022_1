@@ -17,9 +17,12 @@ O sistema deverá:
 
 - Partida
     - Você deve partir do código do projeto Busca e NÃO DEVE MODIFICAR em nada as classes originais.
-    - Você deve criar uma classe ContatoStar que herda de contato e adiciona a ação de favoritar.
-    - Você deve criar uma classe AgendaStar que herda de agenda e adiciona a ação de favoritar e pegar favoritos.
-- Sua AgendaStar deve ser capaz de manipular tanto contatos normais quanto ContactStar, mas só deve ser capaz de favoritar ContactStar
+    - Você deve criar uma classe **ContatoStar** que herda de Contact e adiciona a ação de favoritar.
+        - Para isso o novo contato ganhará um atributo `star` que marca se ele está favoritado.
+    - Você deve criar uma classe **AgendaStar** que herda de Agenda e adiciona a ação de favoritar e pegar favoritos.
+        - A nova agenda ganhará os métodos `star` e `getStarred` para favoritar e pegar os favoritos.
+
+- Sua **AgendaStar** deve ser capaz de manipular tanto contatos normais quanto ContactStar, mas só deve ser capaz de favoritar ContactStar
 
 - Mostrando
     - Ordenar os contatos pelo idContato.
@@ -115,18 +118,57 @@ class ContactStar extends Contact {
     void setStar(boolean value);
     boolean getStar(); 
 }
+
 class AgendaStar extends Agenda {
     //SE o contato existir e for do tipo ContatoStar altere o atributo star dele
     public void star(String name, boolean value); 
     //filtre em uma nova lista apenas os contatos que forem do tipo ContatoStar e que estão favoritados
     public List<Contact> getStarred();
 }
+
 class Solver {
     //cria um ContactStar a partir do vetor de entrada tal como
     //add joao oi:123 tim:432 claro:09123
-    static ContactStar parseContact(String[] ui);
-    //Lembre de criar uma AgendaStar no lugar de uma agenda normal e adicionar a ela contatos Star
-    public static void main(String[] args);
+    static ContactStar parseContact(String[] ui) {
+        return new ContactStar(ui[1], Arrays.asList(ui).stream()
+            .skip(2).map(token -> new Fone(token.split(":")[0], token.split(":")[1]))
+            .collect(Collectors.toList()), false);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        AgendaStar agenda = new AgendaStar();
+        while(true) {
+            String line = scanner.nextLine();
+            System.out.println("$" + line);
+            String ui[] = line.split(" ");
+            
+            if(ui[0].equals("end")) {
+                break;
+            } else if(ui[0].equals("init")) {
+                agenda = new AgendaStar();
+            } else if(ui[0].equals("add")) { //name label:fone label:fone label:fone
+                agenda.addContact(Solver.parseContact(ui));
+            } else if(ui[0].equals("rmContact")) { //name
+                agenda.rmContact(ui[1]);
+            } else if(ui[0].equals("rmFone")) { //name index
+                agenda.findContact(ui[1]).rmFone(Integer.parseInt(ui[2]));
+            } else if(ui[0].equals("show")) {
+                System.out.println(agenda);
+            } else if(ui[0].equals("star")) {
+                agenda.star(ui[1], true);
+            } else if(ui[0].equals("unstar")) {
+                agenda.star(ui[1], false);
+            } else if(ui[0].equals("starred")) {
+                System.out.println(agenda.getStarred().stream().map(c -> "" + c).collect(Collectors.joining("\n")));
+            } else if(ui[0].equals("search")) {
+                System.out.println(agenda.search(ui[1]).stream().map(c -> "" + c).collect(Collectors.joining("\n")));
+            } else {
+                System.out.println("fail: invalid command");
+            }
+        }
+        scanner.close();
+    }
 }
 ```
 <!--FILTER_END-->
