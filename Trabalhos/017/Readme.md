@@ -107,62 +107,6 @@ $end
 ## Esqueleto
 <!--FILTER Solver.java java-->
 ```java
-class Fone {
-    private String id;
-    private String number;
-    public Fone(String id, String number);
-    //verifica se o número é um número de telefone válido
-    public static boolean validate(String number);
-    //O resultado deve ficar assim
-    //oi:1234
-    public String toString();
-    //GETS e SETS
-    String getId();
-    void setId(String id);
-    String getNumber();
-    void setNumber(String number);
-}
-class Contact {
-    private String name;
-    private List<Fone> fones;
-    protected String prefix = "-"; //utilizado no toString
-    //Crie um ArrayList para o ATRIBUTO fones
-    //Se a variável fones não for null, adicione todos os fones usando o método addFone
-    public Contact(String name, List<Fone> fones);
-    //Se fone for válido, insira no atributo fones
-    //Se não, informe o erro
-    public void addFone(Fone fone);
-    //Se o índice existir no ArrayList, remova o telefone com esse índice
-    public void rmFone(int index);
-    //Use um contador para mostrar o índice do telefone
-    //Use o toString do fone para adicioná-lo à saída
-    //O resultado dever ficar assim:
-    //- david [0:oi:123] [1:tim:9081] [2:claro:5431]
-    public String toString();
-    //GETS e SETS
-    String getName();
-    void setName(String name);
-    List<Fone> getFones();
-}
-class Agenda {
-    private List<Contact> contacts;
-    public Agenda();
-    //retorna a posição do contato com esse nome no vetor ou -1 se não existir.
-    private int findPos(String name);
-    //retorna o objeto contato com esse nome ou null se não existir
-    //utilize o método findPos
-    public Contact getContact(String name);
-    //se nenhum contato existir com esse nome, adicione
-    //se ja existir, faça o merge adicionando os telefones
-    public void addContact(Contact contact);
-    //Utilize o método findPos
-    public void rmContact(String name);
-    //Monte uma lista auxiliar procurando no .toString() de cada contato
-    //se ele possui a substring procurada.
-    public List<Contact> search(String pattern);
-    List<Contact> getContacts();
-    public String toString();
-}
 class ContactStar extends Contact {
     private boolean star;
     //contrutor default
