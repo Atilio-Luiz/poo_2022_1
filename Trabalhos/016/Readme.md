@@ -29,7 +29,7 @@ Implemente a classe Contact e Fone utilizando as regras descritas no projeto Con
 
 ## Dicas
 
-- Esta atividade envolve manipulação de Strings. Logo, pode ser necessário pesquisar métodos da classe String que possam te ajudar. Pesquise na API do Java e no livro. 
+- Esta atividade envolve alguma manipulação de Strings. Logo, pode ser necessário pesquisar métodos da classe String que possam te ajudar. Pesquise na API do Java e no livro. 
 
 ## Shell
 
