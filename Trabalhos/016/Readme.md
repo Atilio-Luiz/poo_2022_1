@@ -27,6 +27,9 @@ Implemente a classe Contact e Fone utilizando as regras descritas no projeto Con
     - Fazer uma busca por padrão em todos os atributos do contato, nome e telefones.
     - Se o contato tiver qualquer campo que combine com a string pattern de busca, ele deve ser retornado. Se o pattern é maria, devem ser retornados os contatos como "maria julia", "mariana", "ana maria", etc. Também inclua na busca o id do telefone ou o número do telefone.
 
+## Dicas
+
+- Esta atividade envolve manipulação de Strings. Logo, pode ser necessário pesquisar métodos da classe String que possam te ajudar. Pesquise na API do Java e no livro. 
 
 ## Shell
 
@@ -94,6 +97,8 @@ $end
 
 <!--FILTER Solver.java java-->
 ```java
+import java.util.stream.Collectors;
+
 class Agenda {
     private List<Contact> contacts;
     public Agenda();
@@ -105,7 +110,16 @@ class Agenda {
     //se nenhum contato existir com esse nome, adicione
     //se ja existir, faça o merge adicionando os telefones
     //se tiver adicionado um novo contato, ordene a lista para ficar em ordem alfabética
-    public void addContact(Contact contact);
+    public void addContact(Contact contact) {
+        // ....
+        // o código para ordenação da lista já está pronto logo abaixo, não precisa mexer nele.
+        this.contacts.sort(new Comparator<Contact>() {
+            @Override
+            public int compare(Contact arg0, Contact arg1) {
+                return ((Contact) arg0).getName().compareTo(((Contact)arg1).getName());
+            }
+        });
+    }
     //Utilize o método findPos
     public void rmContact(String name);
     //Monte uma lista auxiliar procurando no .toString() de cada contato
@@ -114,6 +128,7 @@ class Agenda {
     public List<Contact> getContacts();
     public String toString();
 }
+
 class Solver {
         //cria um contato a partir do vetor de entrada tal como
         //add joao oi:123 tim:432 claro:09123
