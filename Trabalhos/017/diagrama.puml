@@ -1,0 +1,76 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+    class Fone {
+    - id : String
+    - number : String
+    __
+    + Fone(id : String, number : String)
+    + toString() : String
+    ..
+    + validate(number : String) : boolean {static}
+    + isValid() : boolean
+    ..
+    + getId() : String
+    + getNumber() : String
+    + setId(id : String)
+    + setNumber(number : String)
+  }
+
+  class Contact {
+    # prefix : String
+    - fones : List<Fone>
+    - name : String
+    __
+    + Contact(name : String, fones : List<Fone>)
+    + toString() : String
+    ..
+    + addFone(fone : Fone)
+    + rmFone(index : int)
+    ..
+    + getFones() : List<Fone>
+    + getName() : String
+    + setFones(fones : List<Fone>)
+    + setName(name : String)
+  }
+
+  class Agenda {
+    - contacts : List<Contact>
+    __
+    - findPosByName(name : String) : int
+    ..
+    + Agenda()
+    + toString() : String
+    ..
+    + addContact (name : String, fones : List<Fone>)
+    + findContact(name : String) : Contact
+    + rmContact  (name : String)
+    + search     (pattern : String) : List<Contact>
+    ..
+    + getContacts() : List<Contact>
+  }
+
+  class ContactStar {
+    - star : boolean 
+    __
+    + ContactStar(name : String, fones : List<Fone>, star : boolean)
+    + toString() : String 
+    ..
+    + getStar() : boolean 
+    + setStar(value : boolean)
+  }
+
+  class AgendaStar {
+    + AgendaStar()
+    + getStarred() : List<Contact>
+    + star(name : String, value : boolean)
+    + toString() : String 
+  }
+}
+
+
+Agenda --> "-contacts" Contact
+Contact --> "-fones" Fone
+Contact <|-- ContactStar 
+Agenda <|-- AgendaStar
+@enduml

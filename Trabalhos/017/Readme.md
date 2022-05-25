@@ -1,4 +1,4 @@
-# ContatoStar & Agenda 4 (herança)
+# ContatoStar & Agenda 3 (herança)
 
 ![](figura.jpg)
 
@@ -9,16 +9,28 @@
 - [Esqueleto](#esqueleto)
 <!--TOC_END-->
 
-Vamos reescrever a atividade dos Favoritos utilizando Herança.
+Ampliando a atividade de Agenda 2, vamos criar uma agenda que gerencia os nossos contatos.
 
 ## Requisitos
 
-- Os mesmos do projeto Favoritos original.
+O sistema deverá:
+
 - Partida
     - Você deve partir do código do projeto Busca e NÃO DEVE MODIFICAR em nada as classes originais.
     - Você deve criar uma classe ContatoStar que herda de contato e adiciona a ação de favoritar.
     - Você deve criar uma classe AgendaStar que herda de agenda e adiciona a ação de favoritar e pegar favoritos.
 - Sua AgendaStar deve ser capaz de manipular tanto contatos normais quanto ContactStar, mas só deve ser capaz de favoritar ContactStar
+
+- Mostrando
+    - Ordenar os contatos pelo idContato.
+    - Se o contato não for favorito (starred) use - antes do idContato.
+    - Marque os contatos que são favoritados com um @ antes do idContato. 
+
+- Favoritando
+    - Favoritar contatos. (star)
+    - Desfavoritar contatos. (unstar)
+    - Mostrar apenas os favoritos. (starred)
+
 
 ## Shell
 
@@ -89,7 +101,7 @@ $end
 
 ***
 ## Diagrama UML
-![](diagrama.png)
+![](diagrama/diagrama.png)
 
 
 ## Esqueleto
