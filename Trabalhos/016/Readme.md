@@ -10,7 +10,7 @@
 
 Sua agenda possui vários contatos e cada contato possui vários telefones.
 
-Implemente a classe Contact e Fone utilizando as regras descritas no projeto Contato ou reaproveite o código que você fez.
+Implemente as classes **Contact** e **Fone** utilizando as regras descritas no projeto Contato ou reaproveite o código que você fez lá naquela atividade.
 
 ***
 ## Requisitos Novos
