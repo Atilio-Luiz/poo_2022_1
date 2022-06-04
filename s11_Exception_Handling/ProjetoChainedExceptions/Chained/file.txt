@@ -1,0 +1,3 @@
+ana julia;12;56.98
+marcos silva;34;78.90
+julia pereira;67;1234.56
