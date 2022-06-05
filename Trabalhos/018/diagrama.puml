@@ -1,0 +1,63 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+package com.qxcode {
+  class Account {
+    - balanceManager : BalanceManager
+    - id : int
+    __
+    + Account(id : int)
+    + deposit(label : Label, value : int) : boolean
+    + fee(value : int) : boolean
+    + reverse(index : int) : boolean
+    + withdraw(value : int) : boolean
+    + toString() : String
+    ..
+    + getBalanceManager() : BalanceManager
+  }
+  class BalanceManager {
+    - balance : int
+    - extract : List<Operation>
+    - nextId : int
+    __
+    + BalanceManager()
+    + addOperation(label : Label, value : int)
+    + toString() : String
+    ..
+    + getBalance() : int
+    + getExtract() : List<Operation>
+    + getExtract(qtdOp : int) : List<Operation>
+  }
+  enum Label {
+    + deposit {static}
+    + fee {static}
+    + opening {static}
+    + reverse {static}
+    + withdraw {static}
+    - name : String
+    __
+    + valueOf(name : String) : Label {static}
+    + values() : Label[] {static}
+    + toString() : String
+    ..
+    + getName() : String
+  }
+  class Operation {
+    - balance : int
+    - index : int
+    - label : Label
+    - value : int
+    __
+    + Operation(index : int, label : Label, value : int, balance : int)
+    + pad(string : String, length : int) : String {static}
+    + toString() : String
+    ..
+    + getBalance() : int
+    + getIndex() : int
+    + getLabel() : Label
+    + getValue() : int
+  }
+}
+Account "1" -->  "1" BalanceManager
+BalanceManager "1" -->  "0..*" Operation
+Operation "1" -->  "1" Label
+@enduml
