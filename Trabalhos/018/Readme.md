@@ -9,12 +9,12 @@
 - [Esqueleto](#esqueleto)
 <!--TOC_END-->
 
-O objetivo dessa atividade é implementar uma classe responsável por gerenciar a account bancária de um único cliente. Faremos operações de withdraw, depósito e extrato.
+O objetivo dessa atividade é implementar uma classe responsável por gerenciar a conta bancária de um único cliente. Faremos operações de saque(*withdraw*), depósito (*deposit*) e extrato(*extract*).
 
 ## Requisitos
 
 - **Iniciar**
-    - Iniciar a account passando número da account.
+    - Iniciar a account passando o número da account.
     - Se a account já existir, resete todos os valores para uma nova account.
     - Inicia a account com a operação de "abertura".
     - Para facilitar a visualização dos dados, utilize inteiros para registrar as operações financeiras.
