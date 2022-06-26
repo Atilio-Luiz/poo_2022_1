@@ -103,14 +103,14 @@ A seguir, vamos empacotar os arquivos .class gerados em um arquivo .jar
 - Um arquivo de manifesto é essencial, pois define um ponto de entrada para nosso aplicativo, qual classe principal vamos executar para o arquivo jar.
 - O arquivo de manifesto é chamado *MANIFEST.MF* e deve estar localizado no subdiretório chamado *META-INF* do arquivo .jar
 - Portanto, crie um arquivo de manifesto chamado MANIFEST.MF no mesmo diretório em que os arquivos *App.class* e *Person.class*, para que não seja necessário definir o caminho da classe explicitamente
-- Você deve colocar o seguinte conteúdo dentro do arquivo *MANNIFEST.MF*: Escreva `Main-Class: App` e então pressione ENTER
+- Você deve colocar o seguinte conteúdo dentro do arquivo *MANIFEST.MF*: Escreva `Main-Class: App` e então pressione ENTER
 
 ```
 Main-Class: App
 
 ```
 
-- Agora, salve o arquivo *MANNIFEST.MF* 
+- Agora, salve o arquivo *MANIFEST.MF* 
 
 ### 6.3 Criando o arquivo jar executável
 
@@ -131,10 +131,10 @@ Deste modo, os nomes dos arquivos correspondentes também são escritos na mesma
 
 **Exemplo:**
 
-Abra o terminal ou propt de comando no mesmo diretório em que os arquivos .class e o MANNIFEST.MF estão, e digite o comando abaixo:
+Abra o terminal ou propt de comando no mesmo diretório em que os arquivos .class e o MANIFEST.MF estão, e digite o comando abaixo:
 
 ```
-jar -cvfm Cadastro.jar MANNIFEST.MF App.class Person.class
+jar -cvfm Cadastro.jar MANIFEST.MF App.class Person.class
 ```
 
 ![](images/img05.png)
