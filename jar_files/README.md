@@ -32,7 +32,7 @@ A fim de criar um arquivo .jar executável da sua aplicação, você deve ter a 
 
 ### 4.2. Escreva o seu programa Java
 
-Eu vou usar nesse exemplo esse programa [aqui](Cadastro).
+Eu vou usar nesse exemplo um pequeno projeto Java que eu desenvolvi no VS Code, disponível [aqui](Cadastro).
 É um programa Java para console que cadastra pessoas e mostra as pessoas cadastradas no terminal. Além disso, o programa usa persitência em arquivo texto a fim de manter os dados das pessoas cadastradas salvos em arquivo.
 
 ### 4.3 Exportando o arquivo JAR
@@ -48,6 +48,10 @@ Nesse momento, o VS Code te pedirá para especificar a classe principal `MAIN CL
 Nesse exemplo, forneça a classe Principal `App`.
 
 **Nota:** Se você não especificar a classe principal, o arquivo jar não se tornará um arquivo executável.
+
+![](images/img03.png)
+
+![](images/img04.png)
 
 Pronto! O seu arquivo .jar executável já foi gerado, com o nome **Cadastro.jar**
 
