@@ -64,7 +64,21 @@ Pronto! O seu arquivo .jar executável já foi gerado, com o nome **Cadastro.jar
 
 ---
 
-## 5. Gerando JAR a partir da Linha de Comando
+## 5. Executando o jar
+
+Agora, podemos usar a opção `-jar` do comando `java` para executar nosso aplicativo desde que o arquivo jar executável tenha sido criado.
+
+```
+java -jar Cadastro.jar
+```
+
+Assim, nossa aplicação será executada, como ilustrado abaixo:
+
+![](images/img06.png)
+
+---
+
+## 6. Gerando JAR a partir da Linha de Comando
 
 Neste caso, vamos usar o programa **jar** que vem com o JDK. O programa **jar** possui algumas opções, com as quais podemos criar um arquivo jar executável. Algumas delas estão listadas abaixo:
 
@@ -76,7 +90,7 @@ Neste caso, vamos usar o programa **jar** que vem com o JDK. O programa **jar** 
 
 Eu vou usar nesse exemplo o mesmo projeto Java, chamado **Cadastro**, usado no item anterior, disponível [aqui](Cadastro). É um programa Java para console que cadastra pessoas e mostra as pessoas cadastradas no terminal. Além disso, o programa usa persitência em arquivo texto a fim de manter os dados das pessoas cadastradas salvos em arquivo.
 
-### 5.1 Compile o projeto
+### 6.1 Compile o projeto
 
 Você pode compilar o seu projeto usando a linha de comando:
 
@@ -84,7 +98,7 @@ Você pode compilar o seu projeto usando a linha de comando:
 
 A seguir, vamos empacotar os arquivos .class gerados em um arquivo .jar
 
-### 5.2 Criando um arquivo manifesto
+### 6.2 Criando um arquivo manifesto
 
 - Um arquivo de manifesto é essencial, pois define um ponto de entrada para nosso aplicativo, qual classe principal vamos executar para o arquivo jar.
 - O arquivo de manifesto é chamado *MANIFEST.MF* e deve estar localizado no subdiretório chamado *META-INF* do arquivo .jar
@@ -98,7 +112,7 @@ Main-Class: App
 
 - Agora, salve o arquivo *MANNIFEST.MF* 
 
-### 5.3 Criando o arquivo jar executável
+### 6.3 Criando o arquivo jar executável
 
 Um arquivo jar executável pode ser gerado pela linha de comando, seguindo o padrão abaixo:
 
@@ -125,15 +139,3 @@ jar -cvfm Cadastro.jar MANNIFEST.MF App.class Person.class
 
 ![](images/img05.png)
 
-
-## 5.4 Executando o jar
-
-Agora, podemos usar a opção `-jar` do comando `java` para executar nosso aplicativo desde que o arquivo jar executável tenha sido criado.
-
-```
-java -jar Cadastro.jar
-```
-
-Assim, nossa aplicação será executada, como ilustrado abaixo:
-
-![](images/img06.png)
